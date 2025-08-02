@@ -92,6 +92,26 @@
             flex-direction:column;
             gap:20px;
         }
+        .sign-up{
+            position:absolute;
+            bottom:0;
+            padding:15px;
+        }
+        .h2h{ padding:10px;
+
+        }
+        .input-wrapper{
+            position:relative;
+        }
+        .input-wrapper span{
+            position:absolute;
+             right:10px;
+             top:30%;
+             font-size:12px;
+             color:blue;
+             font-family: Arial, Helvetica, sans-serif;
+             font-weight: bold;
+        }
         
          @media only screen and (max-width:480px)
         {
@@ -113,7 +133,9 @@
              width:100%;
 
              }
-             
+            .sign-up{
+                padding:0;
+            }             
 
         }
        
@@ -132,19 +154,23 @@
             </div>
         </div>
         <div class="right">
-         <h1 style="color:blue; padding-bottom:2px;">Sign in</h1>
-         Lorem ipsum dolor sit amet consectetur . 
+         <span style="color:blue; font-size:30px; font-weight: bold; padding:5px;">Sign in</span>
+         <div class="h2h">Lorem ipsum dolor sit amet consectetur.</div>
             <div class="input-container">
          <input type="text" placeholder="User Name">
-          <input type="text" placeholder="Password"></br>
+         <div class="input-wrapper">
+            <input type="text" placeholder="Password">
+            <span>SHOW</span></br>
+        </div>
           </div>
          <div class="remember">
         <div> <input type="checkbox"> Remember me</div> 
         <div>  Forgot Password?</div>
           </div>
           <button name="button" > sign in</button>
-            
+           <div class="sign-up"> 
            Dont have an account? Sign Up
+           </div>
         </div>
       </div>
       </div>
